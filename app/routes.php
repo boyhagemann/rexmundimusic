@@ -18,7 +18,14 @@ Route::get('/', function()
 
 Route::get('/cache', function()
 {
+	Cache::forget('website');
+
 	Cache::rememberForever('website', function() {
+
+		Mail::send('emails.contact.notification', array('name' => 'Test name'), function($message) {
+			$message->to('boyhagemann@gmail.com')
+				    ->subject('Test email from RexMundiMusic.com');
+		});
 
 		return $_ENV['MAILGUN_API'];
 
