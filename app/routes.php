@@ -13,5 +13,16 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return Cache::get('website');
+});
+
+Route::get('/cache', function()
+{
+	Cache::rememberForever('website', function() {
+
+		return $_ENV['MAILGUN_API'];
+
+	});
+
+	return Redirect::to('/');
 });
