@@ -8,7 +8,7 @@ class HomeController extends BaseController {
 	 *
 	 */
 	public function index()
-	{
+	{        
 		// Add the tweets to the layout
 		$this->layout->tweets = $this->tweets();
 

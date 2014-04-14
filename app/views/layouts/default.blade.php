@@ -7,8 +7,8 @@
 
 	{{ HTML::style('//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css') }}
     {{ HTML::style('http://fonts.googleapis.com/css?family=Noto+Sans') }}
-	{{ HTML::style('css/fonts.css') }}
-	{{ HTML::style('css/screen.css') }}
+	{{ HTML::style('http://rexmundimusic.comrexmundimusic.s3-website-us-east-1.amazonaws.com/css/fonts.css') }}
+	{{ HTML::style('http://rexmundimusic.comrexmundimusic.s3-website-us-east-1.amazonaws.com/css/screen.css') }}
 </head>
 <body>
 
