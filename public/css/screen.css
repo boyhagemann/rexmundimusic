@@ -1,4 +1,150 @@
 
+body {
+    padding-top: 0;
+    background: #383838;
+    color: #fff;
+    font-family: "Noto Sans";
+    font-size: 15px;
+}
+
+
+
+/*******************************************************************************
+ *
+ * Fonts
+ *
+ ******************************************************************************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.btn,
+form legend,
+form label,
+.i__font_main {
+    font-family: 'blue_highway_d_typeregular';
+}
+h1 span,
+h2 span {
+    font-size: 21px;
+    vertical-align: baseline;
+}
+
+
+/*******************************************************************************
+ *
+ * Navbar
+ *
+ ******************************************************************************/
+
+.navbar-main {
+    height: 109px;
+    background: url('../img/bg-navbar.png') left top;
+    border: none;
+}
+
+.navbar-main__menu {
+    margin-top: 30px;
+}
+.navbar-main__menu-link {
+    font-size: 18px;
+}
+.navbar-main__menu-list .active {
+    background: none;
+}
+
+
+
+/*******************************************************************************
+ *
+ * Logo
+ *
+ ******************************************************************************/
+
+.logo {
+    margin-top: 30px;
+}
+.logo__link {
+    background: url('../img/rexmundi-logo.png') no-repeat left center;
+    width: 100px;
+    height: 70px;
+    text-indent: -10000px;
+}
+
+
+
+
+
+/*******************************************************************************
+ *
+ * Visual
+ *
+ ******************************************************************************/
+
+.hero-unit {
+    background: url('../img/rexmundi-visual.jpg') no-repeat center -400px;
+    height: 800px;
+    margin: 0;
+    border-radius: 0;
+}
+
+
+/*******************************************************************************
+ *
+ * Contact
+ *
+ ******************************************************************************/
+
+.contact {
+    background: url('../img/rexmundi-tunnel.jpg') no-repeat center -580px;
+    padding: 200px 0 100px;
+}
+.contact__title-pre {
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+}
+.contact__title {
+    color: #fff;
+    font-size: 60px;
+    margin: 0 0 20px;
+}
+
+.contact__label {
+    font-size: 20px;
+}
+.contact__email,    
+.contact__name,
+.contact__message {    
+    border: none;
+    border-radius: 0;
+    background: rgba(255,255,255,0.7);
+    font-size: 18px;
+    height: 45px;
+    padding: 10px;
+}
+.contact .contact__message {
+    height: 150px;
+}
+
+.contact__button {
+    background: #99150d;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    font-size: 25px;
+}
+
+
+
+/*******************************************************************************
+ *
+ * Tweets
+ *
+ ******************************************************************************/
+
 .tweet {
 	margin-bottom: 20px;
 }

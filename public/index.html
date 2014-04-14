@@ -6,10 +6,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link media="all" type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Sans">
+	<link media="all" type="text/css" rel="stylesheet" href="http://localhost/rexmundimusic/public/css/fonts.css">
 	<link media="all" type="text/css" rel="stylesheet" href="http://localhost/rexmundimusic/public/css/screen.css">
 </head>
 <body>
 
+    <nav class="navbar navbar-inverse navbar-main navbar-fixed-top" role="navigation">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header logo">              
+            <a class="navbar-brand logo__link" href="#">Rex Mundi Music</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-main__menu">
+            <ul class="nav navbar-nav pull-right navbar-main__menu-list">
+              <li class="active navbar-main__menu-item"><a href="#" class="navbar-main__menu-link i__font_main">Latest</a></li>
+              <li class="navbar-main__menu-item"><a href="#" class="navbar-main__menu-link i__font_main">Bio</a></li>
+              <li class="navbar-main__menu-item"><a href="#" class="navbar-main__menu-link i__font_main">Connect</a></li>
+              <li class="navbar-main__menu-item"><a href="#" class="navbar-main__menu-link i__font_main">Media</a></li>
+              <li class="navbar-main__menu-item"><a href="#" class="navbar-main__menu-link i__font_main">Contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>;
+    
+    <section class="hero-unit">
+
+        <article id="latest">
+
+        </article>
+
+    </section>
+    
 	<div class="container">
 
 		<section id="section-tweets" class="col-md-8">
@@ -19,32 +49,45 @@
 		<section id="section-tweets" class="col-md-4">
 					</section>
 
-		<section id="section-contact" class="col-md-8 offset-md-3">
-			<div class="row">
+	</div>
 
-	<form method="POST" action="http://localhost/rexmundimusic/public" accept-charset="UTF-8" name="contact-form" id="contact-form" role="form"><input name="_token" type="hidden" value="EJuD2KPa4FhBfgJDVkRAbaovfPuuNMf7crJyB7I3">
+    <section id="section-contact" class="contact">
+
+        <div class="container">
+
+            <div class="row">    
+
+                <article class="col-md-5 col-md-offset-6">
+                 
+    <h2 class="contact__title-pre i__font_main">Enquiries and bookings</h2>
+    <h1 class="contact__title i__font_main">Contact</h1>
+                    
+	<form method="POST" action="http://localhost/rexmundimusic/public" accept-charset="UTF-8" name="contact-form" id="contact-form" role="form" class="contact__form"><input name="_token" type="hidden" value="wZgPdfiirPbULCCbhtkRnqhBRm3SevbEEfAKS2Pl">
 	<div class="form-group">
-		<label for="exampleInputEmail1">Your name</label>
-		<input class="form-control" name="name" type="text" value="">	</div>
+		<label for="exampleInputEmail1" class="contact__label">Your name</label>
+		<input class="form-control  contact__name" name="name" type="text" value="">	</div>
 
 	<div class="form-group">
-		<label for="exampleInputEmail1">Email address</label>
-		<input class="form-control" name="email" type="email" value="">	</div>
+		<label for="exampleInputEmail1" class="contact__label">Email address</label>
+		<input class="form-control contact__email" name="email" type="email" value="">	</div>
 
 	<div class="form-group">
-		<label for="exampleInputEmail1">Your message</label>
-		<textarea class="form-control" name="text" cols="50" rows="10"></textarea>	</div>
+		<label for="exampleInputEmail1" class="contact__label">Your message</label>
+		<textarea class="form-control contact__message" name="text" cols="50" rows="10"></textarea>	</div>
 
 	<div class="form-group">
-		<input class="btn btn-default btn-lg" type="submit" value="submit">	</div>
+		<input class="btn btn-default btn-lg contact__button" type="submit" value="submit">	</div>
 
 	</form>
 	<div id="contact-response"></div>
 
-</div>
-		</section>
+</article>
 
-	</div>
+            </div>
+
+        </div>
+
+    </section>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>

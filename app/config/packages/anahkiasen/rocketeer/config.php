@@ -27,9 +27,9 @@
 	// and store them locally
 	'connections' => array(
 		'production' => array(
-			'host'      => $_ENV['PRODUCTION_HOST'],
-			'username'  => $_ENV['PRODUCTION_USER'],
-			'password'  => $_ENV['PRODUCTION_PASS'],
+			'host'      => '',
+			'username'  => '',
+			'password'  => '',
 			'key'       => '',
 			'keyphrase' => '',
 		),

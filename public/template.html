@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel='stylesheet' href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Noto+Sans'>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel='stylesheet' href='css/screen.css'>
+</head>
+<body>
+
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-inverse navbar-main navbar-fixed-top" role="navigation">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header logo">              
+            <a class="navbar-brand logo__link" href="#">Rex Mundi Music</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-main__menu">
+            <ul class="nav navbar-nav pull-right navbar-main__menu-list">
+              <li class="active navbar-main__menu-item"><a href="#" class="navbar-main__menu-link i__font_main">Latest</a></li>
+              <li class="navbar-main__menu-item"><a href="#" class="navbar-main__menu-link i__font_main">Bio</a></li>
+              <li class="navbar-main__menu-item"><a href="#" class="navbar-main__menu-link i__font_main">Connect</a></li>
+              <li class="navbar-main__menu-item"><a href="#" class="navbar-main__menu-link i__font_main">Media</a></li>
+              <li class="navbar-main__menu-item"><a href="#" class="navbar-main__menu-link i__font_main">Contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>    
+    <!-- End Navbar -->
+    
+    
+    <section class="hero-unit">
+
+        <article id="latest">
+
+        </article>
+
+    </section>
+    
+	<div class="container">
+
+		<section id="section-tweets" class="col-md-8">
+
+		</section>
+
+		<section id="section-tweets" class="col-md-4">
+			{{ $tweets }}
+		</section>
+
+		<section id="section-contact" class="col-md-8 offset-md-3">
+			{{ $contact }}
+		</section>
+        
+	</div>
+    
+    <section class="contact">
+        
+        <div class="container">
+            
+            <div class="row">
+                
+                <article class="col-md-5 col-md-offset-6">
+                 
+                    <h2 class="contact__title-pre i__font_main">Enquiries and bookings</h2>
+                    <h1 class="contact__title i__font_main">Contact</h1>
+                    
+                    <form role="form" class="contact__form">
+                    <div class="form-group">
+                      <label for="contact_email" class="contact__label">Your email address</label>
+                      <input type="email" class="form-control contact__email" id="contact_email" placeholder="Enter your email address...">
+                    </div>
+                    <div class="form-group">
+                      <label for="contact_name" class="contact__label">Your name</label>
+                      <input type="text" class="form-control contact__name" id="contact_name" placeholder="Enter your name...">
+                    </div>
+                    <div class="form-group">
+                      <label for="contact_message" class="contact__label">Have a question?</label>
+                      <textarea id="contact_message" class="form-control contact__message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default btn-lg contact__button">Submit</button>
+                  </form>
+
+                </article>
+
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+    <script type='text/javascript' src='http://www.parsecdn.com/js/parse-1.2.16.min.js'></script>
+	<script type='text/javascript' src='js/main.js'></script>
+</body>
+</html>
