@@ -106,7 +106,9 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-		'Teepluss\Api\ApiServiceProvider'
+		'Teepluss\Api\ApiServiceProvider',
+		'Aws\Laravel\AwsServiceProvider',
+		'Thujohn\Twitter\TwitterServiceProvider',
 
 	),
 
@@ -174,7 +176,8 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
 		'API' 			  => 'Teepluss\Api\Facades\API',
-
+		'AWS' 			  => 'Aws\Laravel\AwsFacade',
+		'Twitter' 		  => 'Thujohn\Twitter\TwitterFacade',
 	),
 
 );
