@@ -109,6 +109,7 @@ return array(
 		'Teepluss\Api\ApiServiceProvider',
 		'Aws\Laravel\AwsServiceProvider',
 		'Thujohn\Twitter\TwitterServiceProvider',
+		'Rocketeer\RocketeerServiceProvider',
 
 	),
 
@@ -178,6 +179,7 @@ return array(
 		'API' 			  => 'Teepluss\Api\Facades\API',
 		'AWS' 			  => 'Aws\Laravel\AwsFacade',
 		'Twitter' 		  => 'Thujohn\Twitter\TwitterFacade',
+		'Rocketeer' 	  => 'Rocketeer\Facades\Rocketeer',
 	),
 
 );

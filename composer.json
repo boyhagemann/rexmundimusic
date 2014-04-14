@@ -7,7 +7,8 @@
 		"laravel/framework": "4.1.*",
 		"teepluss/api": "dev-master",
 		"aws/aws-sdk-php-laravel": "1.*",
-		"thujohn/twitter": "1.*"
+		"thujohn/twitter": "1.*",
+		"anahkiasen/rocketeer": "1.*"
 	},
 	"autoload": {
 		"classmap": [

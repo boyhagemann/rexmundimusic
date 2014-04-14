@@ -1,7 +1,5 @@
 <?php
 
-use ZendService\Amazon\S3\S3;
-
 class HomeController extends BaseController {
 
 	protected $layout = 'layouts.default';
