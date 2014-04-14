@@ -29,8 +29,27 @@ class HomeController extends BaseController {
 	 */
 	public function tweets()
 	{
-		$mentions = Twitter::getMentionsTimeline(array('count' => 8));
-		return View::make('home.tweets', compact('mentions'));
+		try {
+
+			return Cache::rememberForever('tweets', function()  {
+
+				$mentions = Twitter::getMentionsTimeline(array('count' => 8));
+
+				if(!$mentions->errors) {
+					throw new Exception();
+				}
+
+				return View::make('home.tweets', compact('mentions'));
+
+			});
+
+		}
+		catch(Exception $e) {
+
+			return Cache::get('tweets');
+
+		}
+
 	}
 
 	/**

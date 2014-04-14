@@ -1,0 +1,12 @@
+
+.tweet {
+	margin-bottom: 20px;
+}
+.tweet__name {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+}
+.tweet__ago {
+	font-size: 13px;
+}
