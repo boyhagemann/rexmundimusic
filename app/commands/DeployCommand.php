@@ -98,7 +98,7 @@ class DeployCommand extends Command {
 	 */
 	protected function publishToAmazonS3() {
 
-		$path 		= getcwd();
+		$path 		= public_path();
 		$objects 	= new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path), RecursiveIteratorIterator::SELF_FIRST);
 		$s3 		= App::make('aws')->get('s3');
 		$treshold 	= 60*5; // cron runs every 5 minutes...
@@ -112,7 +112,7 @@ class DeployCommand extends Command {
 				$path = $fileinfo->getPathname();
 				$time = $fileinfo->getMTime();
 
-				$relativePath = str_replace(getcwd(), '', $path);
+				$relativePath = str_replace(public_path(), '', $path);
 				$relativePath = str_replace('\\', '/', $relativePath);
 
 				if($time > time() - $treshold) {
