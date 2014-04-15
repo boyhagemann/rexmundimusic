@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function()
-{
-	return 'homepage';
-});
+Route::get('/', 'HomeController@index');
 
-Route::get('/cache', 'HomeController@index');
+Route::get('/cache', function() {
+
+	exec(sprintf('php %s/artisan deploy:s3', dirname(app_path())), $output);
+
+	return View::make('cache', compact('output'));
+});
