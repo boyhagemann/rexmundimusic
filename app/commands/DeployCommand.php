@@ -87,7 +87,9 @@ class DeployCommand extends Command {
 	 */
 	protected function getOptions()
 	{
-		return array();
+		return array(
+			array('all', null, InputOption::VALUE_NONE, 'Deploy all public files, regarding if they are changed recently or not')
+		);
 	}
 
 	/**
@@ -115,7 +117,9 @@ class DeployCommand extends Command {
 				$relativePath = str_replace(public_path(), '', $path);
 				$relativePath = str_replace('\\', '/', $relativePath);
 
-				if($time > time() - $treshold) {
+				$all = $this->option('all');
+
+				if($all || $time > time() - $treshold) {
 
 					$s3->putObject(array(
 						'Bucket'     	=> $_ENV['S3_BUCKET'],

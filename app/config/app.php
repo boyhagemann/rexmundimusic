@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://rexmundimusic.com.s3-website-us-east-1.amazonaws.com',
+	'url' => 'http://rexmundimusic.s3-website-us-east-1.amazonaws.com',
 
 	/*
 	|--------------------------------------------------------------------------
