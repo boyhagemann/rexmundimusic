@@ -1,6 +1,6 @@
 
 body {
-    padding-top: 100px;
+    padding-top: 90px;
     background: #383838;
     color: #fff;
     font-family: "Noto Sans";
@@ -51,8 +51,21 @@ h2 span {
 .navbar-main__menu-link {
     font-size: 18px;
 }
-.navbar-main__menu-list .active {
-    background: none;
+/*.navbar-main__menu-list .active {*/
+    /*background: none;*/
+/*}*/
+
+@media (max-width: 767px) {
+
+	.navbar-collapse {
+		margin-top: 0;
+	}
+	.navbar li a {
+		background-color: black;
+	}
+	.navbar li a:focus {
+		background-color: black !important;
+	}
 }
 
 
